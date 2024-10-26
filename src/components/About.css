@@ -79,3 +79,16 @@
 .sql { width: 55%; background-color: #003b57; }
 .mongodb { width: 50%; background-color: #4db33d; }
 .nodejs { width: 65%; background-color: #68a063; }
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .skills-section {
+        grid-template-columns: 1fr;
+    }
+}

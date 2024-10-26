@@ -85,6 +85,18 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .projects-content {
+        padding: 0 15px;
+    }
+    .project-cards {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+    .project-card {
+        max-width: 100%; /* Full width for mobile */
+    }
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }

@@ -81,21 +81,21 @@
 }
 
 /* Adjustments for mobile screens */
+
 @media (max-width: 768px) {
     .navbar {
-        padding: 10px 20px;
-        height: 50px;
+        flex-direction: column;
+        padding: 10px;
     }
-
     .nav-links {
-        flex-direction: row; /* Revert to row layout for mobile */
-        top: auto;
-        right: auto;
-        position: static; /* Place inline with the logo */
-        gap: 10px;
+        display: none; /* Hide links initially */
     }
-
-    .nav-links li a {
-        font-size: 0.9rem;
+    .nav-links.open {
+        display: flex; /* Show when menu is open */
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hamburger {
+        display: block; /* Display hamburger icon */
     }
 }
