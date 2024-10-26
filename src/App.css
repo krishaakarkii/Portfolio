@@ -1,0 +1,54 @@
+
+
+
+
+/* Global body styling */
+html, body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a192f; /* Unified dark background */
+  color: #ccd6f6; /* Default text color */
+  overflow-x: hidden;
+
+}
+#home {
+  margin-top: 0; /* Set this to 0 initially to check if it resolves the issue */
+}
+/* Make each section inherit the global background color */
+section {
+  background-color: inherit;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Global link styling */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8892b0;
+}
+
+/* Button styling */
+button, .home-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #00bcd4;
+  background: none;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button:hover, .home-button:hover {
+  background-color: #00bcd4;
+  color: #0a192f;
+}

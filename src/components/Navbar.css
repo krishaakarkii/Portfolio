@@ -1,0 +1,106 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: transparent; /* Darker background when scrolling */
+}
+
+.logo {
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #00bcd4;
+    border-radius: 5px;
+}
+
+/* Vertical Menu */
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(10, 25, 47, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-links.open {
+    transform: translateX(0);
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4;
+}
+
+/* Add extra padding/margin to the first section to avoid navbar overlap */
+#home {
+    margin-top: 60px;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        height: 50px;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Revert to row layout for mobile */
+        top: auto;
+        right: auto;
+        position: static; /* Place inline with the logo */
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,81 @@
+/* src/components/About.css */
+
+.about {
+    padding: 60px 20px;
+    color: #ccd6f6;
+    text-align: center;
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Offset for fade-in animation */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.about.fade-in {
+    opacity: 1; /* Fully visible when in view */
+    transform: translateY(0); /* Return to normal position */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* Skills Section Grid */
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+
+/* Skill-specific progress bar widths */
+.java { width: 50%; background-color: #f09300; }
+.javascript { width: 90%; background-color: #f0db4f; }
+.react { width: 80%; background-color: #61dafb; }
+.python { width: 50%; background-color: #3776ab; }
+.sql { width: 55%; background-color: #003b57; }
+.mongodb { width: 50%; background-color: #4db33d; }
+.nodejs { width: 65%; background-color: #68a063; }

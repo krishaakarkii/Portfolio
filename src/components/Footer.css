@@ -1,0 +1,11 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: transparent; /* Completely transparent background */
+    color: #ccd6f6; /* Text color consistent with your theme */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+}
