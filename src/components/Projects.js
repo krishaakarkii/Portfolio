@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Projects.css';
-import { FaTerminal } from 'react-icons/fa';
+import { FaTerminal, FaGlobe, FaMapMarkedAlt } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 const projectData = [
@@ -11,6 +11,18 @@ const projectData = [
         description: "A CLI tool to manage passwords securely.",
         link: "https://github.com/krishaakarkii/Password-manager-cli",
         icon: <FaTerminal />
+    },
+    {
+        title: "Social Media App",
+        description: "A full-stack MERN social media application with features like posts, comments, and likes.",
+        link: "https://github.com/krishaakarkii/social-media",
+        icon: <FaGlobe />
+    },
+    {
+        title: "Travel Planner App",
+        description: "A React-based travel planner app integrated with Google Places API for itinerary creation.",
+        link: "https://github.com/krishaakarkii/travelapp",
+        icon: <FaMapMarkedAlt />
     }
 ];
 
