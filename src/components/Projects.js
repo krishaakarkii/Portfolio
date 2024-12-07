@@ -1,8 +1,6 @@
-// src/components/Projects.js
-
 import React from 'react';
 import './Projects.css';
-import { FaTerminal, FaGlobe, FaMapMarkedAlt } from 'react-icons/fa';
+import { FaTerminal, FaGlobe, FaMapMarkedAlt, FaCode } from 'react-icons/fa'; // Added FaCode icon
 import { useInView } from 'react-intersection-observer';
 
 const projectData = [
@@ -23,13 +21,24 @@ const projectData = [
         description: "A React-based travel planner app integrated with Google Places API for itinerary creation.",
         link: "https://github.com/krishaakarkii/travelapp",
         icon: <FaMapMarkedAlt />
+    },
+    {
+        title: "StringUtils",
+        description: "A Java library offering utility methods for common string operations.",
+        link: "https://github.com/krishaakarkii/StringUtils",
+        icon: <FaCode />
+    },
+    {
+        title: "JavaFX App",
+        description: "A JavaFX-based desktop application with interactive UI components.",
+        link: "https://github.com/krishaakarkii/javaFXApp",
+        icon: <FaCode />
     }
 ];
 
 const Projects = () => {
-    // Trigger animation when the section is in view
     const { ref, inView } = useInView({
-        triggerOnce: false, // Change to true if you only want it to animate the first time
+        triggerOnce: false,
         threshold: 0.2,
     });
 

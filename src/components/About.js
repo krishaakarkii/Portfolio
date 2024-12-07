@@ -1,10 +1,10 @@
-// src/components/About.js
-
 import React from 'react';
 import './About.css';
-import { FaJava, FaReact, FaPython, FaDatabase } from 'react-icons/fa';
+import { FaJava, FaReact, FaPython, FaDatabase, FaDocker, FaGitAlt } from 'react-icons/fa';
 import { DiJavascript1, DiMongodb, DiNodejsSmall } from 'react-icons/di';
+
 import { useInView } from 'react-intersection-observer';
+
 const About = () => {
     // Trigger animation every time the section comes into view
     const { ref, inView } = useInView({
@@ -14,14 +14,13 @@ const About = () => {
 
     return (
         <section className={`about ${inView ? 'fade-in' : ''}`} id="about" ref={ref}>
-
             <div className="about-content">
                 <h2 className="about-title">About Me</h2>
                 <p className="about-description">
-                    I'm Krisha Karki, a software developer passionate about building efficient and user-friendly applications. I specialize in both front-end and back-end development, juggling Java, React, Python, and SQL.
+                    I'm Krisha Karki, a software developer passionate about building efficient, scalable, and user-friendly applications. I specialize in both front-end and back-end development using modern tools and technologies.
                 </p>
                 <p className="about-description">
-                    Whether it’s optimizing performance or creating engaging user experiences, I love solving complex problems and learning new technologies.
+                    I have experience in web and mobile app development, data analysis, and DevOps. I enjoy solving complex problems, optimizing performance, and creating innovative solutions.
                 </p>
 
                 <h3 className="skills-title">Technical Skills</h3>
@@ -63,10 +62,27 @@ const About = () => {
                         <span>Node.js</span>
                         <div className="progress-bar"><div className="progress nodejs"></div></div>
                     </div>
+                    <div className="skill">
+                        <FaDocker className="skill-icon" />
+                        <span>Docker</span>
+                        <div className="progress-bar"><div className="progress docker"></div></div>
+                    </div>
+                    <div className="skill">
+                        <FaGitAlt className="skill-icon" />
+                        <span>Git</span>
+                        <div className="progress-bar"><div className="progress git"></div></div>
+                    </div>
+
                 </div>
+
+                <h3 className="tools-title">Tools & Methodologies</h3>
+                <p className="tools-description">
+                    I am proficient in using **Docker** for containerization, **Git** for version control, and **Jira** for project management.
+                    My projects follow **Agile/Scrum methodologies**, ensuring iterative development and fast delivery.
+                    I also use **Figma** for UI/UX prototyping and collaborate effectively in teams using modern DevOps practices.
+                </p>
             </div>
         </section>
-
     );
 };
 

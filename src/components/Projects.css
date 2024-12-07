@@ -26,8 +26,8 @@
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly larger cards */
-    gap: 25px; /* Increased gap for better spacing */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Maintain flexible layout */
+    gap: 40px; /* Increase gap between cards */
     padding: 0 15px;
 }
 
@@ -47,8 +47,9 @@
     justify-content: center;
     text-align: center;
     padding: 20px;
-    margin: 0 auto;
+    margin: 10px auto; /* Adds vertical space if needed */
 }
+
 
 .project-card:hover {
     transform: translateY(-10px);

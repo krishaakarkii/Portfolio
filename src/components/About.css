@@ -1,5 +1,3 @@
-/* src/components/About.css */
-
 .about {
     padding: 60px 20px;
     color: #ccd6f6;
@@ -15,12 +13,12 @@
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .about-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #00bcd4;
     margin-bottom: 20px;
 }
@@ -32,17 +30,17 @@
 }
 
 .skills-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #00bcd4;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
-/* Skills Section Grid */
 .skills-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 .skill {
@@ -71,14 +69,29 @@
     transition: width 1s ease;
 }
 
-/* Skill-specific progress bar widths */
-.java { width: 50%; background-color: #f09300; }
+.java { width: 70%; background-color: #f09300; }
 .javascript { width: 90%; background-color: #f0db4f; }
 .react { width: 80%; background-color: #61dafb; }
-.python { width: 50%; background-color: #3776ab; }
-.sql { width: 55%; background-color: #003b57; }
-.mongodb { width: 50%; background-color: #4db33d; }
-.nodejs { width: 65%; background-color: #68a063; }
+.python { width: 40%; background-color: #3776ab; }
+.sql { width: 60%; background-color: #003b57; }
+.mongodb { width: 80%; background-color: #4db33d; }
+.nodejs { width: 75%; background-color: #68a063; }
+.docker { width: 40%; background-color: #2496ed; }
+.git { width: 85%; background-color: #f14e32; }
+
+
+.tools-title {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-top: 40px;
+}
+
+.tools-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccd6f6;
+    margin-top: 20px;
+}
 
 @media (max-width: 768px) {
     .about-title {
